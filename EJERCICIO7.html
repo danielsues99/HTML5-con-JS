@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7</title>
+    <script>
+        var t = window.prompt("Seleccione 1 (Preparatoria) 2(Profesional)");
+        niveledu = parseInt(t);
+        var promedio = window.prompt("Ingrese su promedio");
+        pro = parseInt(promedio);
+        var reprobada = window.prompt("Ingrese cantidad de materias reprobadas");
+        materias = parseInt(reprobada);
+        precioprep = (36);
+        preciopro = 60;
+        if (pro >= 9.5 && niveledu == 1 && materias ==0){
+            total = (55*precioprep);
+            desc = ((55*precioprep)*0,25);
+            total = total -desc;
+            
+            console.log("El alumno es de preparatoria y puede cursar 55 unidades \n Tiene descuento del 25%\n "
+            + "Total a pagar es: "+ total);
+
+        }
+        else if(pro <9.5 && pro >= 9 && niveledu == 1 && materias ==0){
+                total = ((50*precioprep)*0,10);
+                console.log("El alumno es de preparatoria y puede cursar 50 unidades \n Tiene descuento del 10% "
+                + "Total a pagar es: "+ total);
+        }
+        else if (pro > 7 && pro < 9 && niveledu == 1 && materias ==0){
+            total = (55*precioprep);
+            console.log("El alumno es de preparatoria y puede cursar 55 unidades \n No Tiene descuento "
+            + "Total a pagar es: "+ total);
+        }
+       
+        else if(pro >= 9.5 && niveledu==2 && materias ==0){
+            total = ((55*preciopro)*0,20);
+            console.log("El alumno es de profesional y puede cursar 55 unidades \n Tiene descuento del 20% "
+            + "Total a pagar es: "+ total);
+        }
+        else if(pro < 9.5 && niveledu==2 && materias ==0){
+            total = (55*preciopro);
+            console.log("El alumno es de profesional y puede cursar 55 unidades \n No Tiene descuento" 
+            + "Total a pagar es: "+ total);
+        }
+        else{
+            console.log("Valor ingresado no valido");
+        }
+      
+        if (pro <=7 && materias >=1 && materias <=3 && niveledu==1){
+            total = (45*precioprep);
+            console.log("El alumno es de preparatoria y puede cursar 45 unidades \n No Tiene descuento " 
+            + "Total a pagar es: "+ total);
+        }
+        else if (pro <=7 && materias >=4 && niveledu==1){
+            total = (40*precioprep);
+            console.log("El alumno es de preparatoria y puede cursar 40 unidades \n No Tiene descuento "
+            + "Total a pagar es: "+ total);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

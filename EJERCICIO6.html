@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 6</title>
+    <script>
+         /*Que lea tres números diferentes y determine el numero medio del conjunto de los tres números 
+         (el numero medio es aquel numero que no es ni mayor, ni menor) */
+         console.log("\n\n\t\t\t NUMERO MEDIO \n\n\n\n");
+         var na = window.prompt(" Ingrese numero A:");
+         var a = parseInt(na);
+         var nb = window.prompt("\n Ingrese numero B:");
+         var b = parseInt(nb);
+         var nc = window.prompt("\n Ingrese numero C:");
+         var c = parseInt(nc);
+         if (a < b && a > c || a < c && a > b)
+            {
+                console.log("\n\n El Numero medio es:" + a);
+            }
+            if (b < a && b > c || b < nc && b > a)
+            {
+                console.log("\n\n El Numero medio es:" + b);
+            }
+            if (c < a && c > b || c < b && c > a)
+            {
+                console.log("\n\n El Numero medio es: " + c);
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

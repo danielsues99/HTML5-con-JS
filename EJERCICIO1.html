@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+       <script>
+           /*1- Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig. manera: 
+           Si trabaja 40 horas o menos se le paga $16 por hora
+           Si trabaja mas de 40 horas se le paga $16 por cada una de las primeras 40 horas y $20 por cada hora extra.*/
+
+        var minimo = 40;
+        var horas = window.prompt("Ingrese cantidad de horas trabajadas");
+        h = parseInt(horas);
+
+        if (h <= minimo){
+         var  salario = (h * 16);
+         console.log("Su salario es: " + salario);
+        }
+        else {
+         var extra = (h - minimo);
+         var salario = (minimo * 16) + (extra * 20);
+         console.log("Su salario es: " + salario);
+        }
+     </script>
+
+</head>
+<body>
+    
+</body>
+</html>

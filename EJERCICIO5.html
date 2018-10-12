@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 5</title>
+    <script>
+         /*Una persona se encuentra con un problema de comprar un automóvil o un terreno, los cuales cuestan exactamente lo mismo. 
+         Sabe que mientras el automóvil se devalúa, con el terreno sucede lo contrario. 
+         Esta persona comprara el automóvil si al cabo de tres años la devaluación de este no es mayor que la mitad
+         del incremento del valor del terreno. Ayúdale a esta persona a determinar si debe o no comprar el automóvil.*/
+        console.log("\n\n\t\t\t COMPRA DE TERRENO O AUTO \n\n\n\n");
+        var c = window.prompt("Ingrese el costo del terreno/auto:");
+        costo = parseInt(c);
+        var dev = window.prompt("Ingrese tasa de devalucion del coche (mesual):\t")
+        devauto = parseInt(dev);
+        var ava = window.prompt("Ingrese tasa de avaluacion del terreno (mensual):\t");
+        valterreno = parseInt(ava);
+        devauto = ((devauto / 100) * costo) * (3 * 12);
+        valterreno = ((valterreno / 100) * costo) * (3 * 12);
+        var mitad = valterreno / 2;
+        if (devauto < mitad)
+            {
+                console.log("\n\n Comprar coche");
+            }
+            else {
+                console.log("\n\n Comprar Terreno");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 12</title>
+    <script>
+        var zn=0;
+        var zs=0;
+        var zc=0;
+        var resp;
+        var p=0;
+    
+    var respuesta = window.prompt("Desea registrar votante (1/0) ?");
+    resp = parseInt(respuesta);
+    if (resp == 1){
+    switch(resp)
+    {
+    case 1: zn=zn+1
+    break;
+    case 2: zs=zs+1
+    break;
+    case 3: zc=zc+1
+    break;
+    default: console.log("Valor no permitido");
+    var persona = window.prompt(" Ingrese Nombre la persona votante");
+    p = parseInt(persona);
+    var seccion = window.prompt("\n Ingrese la seccion :(1=ZN)(2=ZS)(3=ZC)");
+    seccion = parseInt(seccion);
+     }
+    }    
+    while(respuesta == 0){
+        if(zn> zs && zn > zc)
+
+    {
+     console.log("LA SECCION CON MAYOR NUMERO DE VOTANTES ES LA SECCION NORTE CON %d PERSONAS",zn);
+    }
+    else if(zs > zn && zs > zc)
+    {
+    console.log("LA SECCION CON MAYOR NUMERO DE VOTANTES ES LA SECCION SUR CON %d PERSONAS",zs);
+    }
+    else
+    {
+    console.log("LA SECCION CON MAYOR NUMERO DE VOTANTES ES LA SECCION CENTRO CON %d PERSONAS",zc);
+    }
+    }
+   
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
